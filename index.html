@@ -268,62 +268,82 @@
     });
 
     // --- PROJECTS DATA ---
-    const projects = [
-      {
-        title: "MLB Runs Prediction Model (2025)",
-        desc: "Daily team run expectations using starting pitchers, park factors, and recent form.",
-        badge: "MLB",
-        tags: ["R", "xgboost", "feature engineering"],
-        link: "#", // demo or writeup
-        code: "#", // repo
-        image: ""
-      },
-      {
-        title: "White Sox Ticketing & Promotions Strategy",
-        desc: "Attendance drivers, dynamic pricing evaluation, and recommendations.",
-        badge: "MLB",
-        tags: ["R", "EDA", "econometrics"],
-        link: "#",
-        code: "#",
-        image: ""
-      },
-      {
-        title: "R Shiny: MLB Player Comparison App",
-        desc: "Interactive player-level dashboard (overview, career trends, similar players).",
-        badge: "App",
-        tags: ["R", "Shiny", "Fangraphs"],
-        link: "#",
-        code: "#",
-        image: ""
-      },
-      {
-        title: "NFL Win Probability Model",
-        desc: "Logistic model trained on 2013–2024 plays; game analysis with top WPA swings.",
-        badge: "NFL",
-        tags: ["R", "modeling", "visualization"],
-        link: "#",
-        code: "#",
-        image: ""
-      },
-      {
-        title: "Tennis Match Edge Finder (Grass)",
-        desc: "Hold/break rates and return points to spot totals/spread value.",
-        badge: "Tennis",
-        tags: ["Python", "EDA"],
-        link: "#",
-        code: "#",
-        image: ""
-      },
-      {
-        title: "NBA Team Construction & Four Factors",
-        desc: "Clustered player archetypes and lineup optimization for the Hawks.",
-        badge: "NBA",
-        tags: ["R", "k-means", "lpSolve"],
-        link: "#",
-        code: "#",
-        image: ""
-      }
-    ];
+   const projects = [
+  {
+    title: "R Shiny · MLB Player Comparison App",
+    desc: "Interactive dashboard (Player Overview, Career Progression, Similar Player Finder) built in R Shiny using Statcast/FanGraphs data.",
+    badge: "App",
+    tags: ["R", "Shiny", "Fangraphs", "Statcast"],
+    link: "#",                     // TODO: shinyapps.io demo OR walkthrough video
+    code: "#",                     // TODO: GitHub repo for app.R + data
+    image: "images/shiny-mlb-comparison-1.jpg" // TODO: upload screenshot with this exact name
+  },
+  {
+    title: "White Sox Relocation Analysis (Chicago → Charlotte)",
+    desc: "Data-driven projections of attendance, pricing, roster value, and market impact; case studies across MLB/NBA/NHL and Charlotte city metrics.",
+    badge: "MLB",
+    tags: ["R", "EDA", "Econometrics", "R Markdown"],
+    link: "Final Project - MSDS 457.pdf",     // Export your DOCX to this exact PDF name at repo root  [oai_citation:0‡How-to-Guide.docx](file-service://file-JikhWZ8g9MUxqS4cJPFYCJ)
+    code: "#",                                 // optional: repo/folder link
+    image: "images/white-sox-relocation.png"   // TODO: upload a cover image with this name
+  },
+
+  // keep your other projects below for now
+  {
+    title: "MLB Runs Prediction Model (2025)",
+    desc: "Daily team run expectations using starting pitchers, park factors, and recent form.",
+    badge: "MLB",
+    tags: ["R", "xgboost", "feature engineering"],
+    link: "#",
+    code: "#",
+    image: ""
+  },
+  {
+    title: "White Sox Ticketing & Promotions Strategy",
+    desc: "Attendance drivers, dynamic pricing evaluation, and recommendations.",
+    badge: "MLB",
+    tags: ["R", "EDA", "econometrics"],
+    link: "#",
+    code: "#",
+    image: ""
+  },
+  {
+    title: "R Shiny: MLB Player Comparison App",
+    desc: "Interactive player-level dashboard (overview, career trends, similar players).",
+    badge: "App",
+    tags: ["R", "Shiny", "Fangraphs"],
+    link: "#",
+    code: "#",
+    image: ""
+  },
+  {
+    title: "NFL Win Probability Model",
+    desc: "Logistic model trained on 2013–2024 plays; game analysis with top WPA swings.",
+    badge: "NFL",
+    tags: ["R", "modeling", "visualization"],
+    link: "#",
+    code: "#",
+    image: ""
+  },
+  {
+    title: "Tennis Match Edge Finder (Grass)",
+    desc: "Hold/break rates and return points to spot totals/spread value.",
+    badge: "Tennis",
+    tags: ["Python", "EDA"],
+    link: "#",
+    code: "#",
+    image: ""
+  },
+  {
+    title: "NBA Team Construction & Four Factors",
+    desc: "Clustered player archetypes and lineup optimization for the Hawks.",
+    badge: "NBA",
+    tags: ["R", "k-means", "lpSolve"],
+    link: "#",
+    code: "#",
+    image: ""
+  }
+];
 
     // --- RENDER PROJECTS ---
     const grid = document.getElementById('projectsGrid');
@@ -338,6 +358,10 @@
         node.querySelector('[data-badge]').textContent = p.badge;
         node.querySelector('[data-link-primary]').href = p.link || '#';
         node.querySelector('[data-link-secondary]').href = p.code || '#';
+        const media = node.querySelector('.aspect-video');
+        if (p.image) {
+          media.innerHTML = `<img src="${p.image}" alt="${p.title}" class="w-full h-full object-cover">`;
+        }
         const tagWrap = node.querySelector('[data-tags]');
         p.tags.forEach(t => {
           const el = document.createElement('span');
