@@ -254,25 +254,22 @@
   <div class="max-w-6xl mx-auto px-4">
     <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Contact</h2>
     <div class="mt-6 grid md:grid-cols-2 gap-6">
-      
-      <!-- Contact form (placeholder) -->
-      <form class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900" 
-            onsubmit="event.preventDefault(); alert('Thanks! This demo form does not send. Replace with Formspree or Netlify Forms.');">
+
+      <!-- Contact Form -->
+      <form action="https://formspree.io/f/xqaypjlw" 
+      class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
         <div class="grid md:grid-cols-2 gap-4">
           <label class="text-sm">Name
-            <input required class="mt-1 w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent px-3 py-2" />
+            <input name="name" required class="mt-1 w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent px-3 py-2" />
           </label>
           <label class="text-sm">Email
-            <input type="email" required class="mt-1 w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent px-3 py-2" />
+            <input type="email" name="email" required class="mt-1 w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent px-3 py-2" />
           </label>
         </div>
         <label class="text-sm block mt-4">Message
-          <textarea required rows="4" class="mt-1 w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent px-3 py-2"></textarea>
+          <textarea name="message" required rows="4" class="mt-1 w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent px-3 py-2"></textarea>
         </label>
         <button class="mt-4 px-4 py-2 rounded-xl bg-brand-600 text-white hover:bg-brand-700 shadow-soft">Send</button>
-        <p class="mt-2 text-xs text-slate-500">
-          Tip: Replace this form with <a href="https://formspree.io/" target="_blank" rel="noopener" class="underline">Formspree</a> or similar to make it functional.
-        </p>
       </form>
 
       <!-- Sidebar with your info -->
