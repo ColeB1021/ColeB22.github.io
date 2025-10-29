@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cole Barber · Sports Analytics Portfolio</title>
-  <meta name="description" content="Projects and assignments from my Sports Analytics work—MLB, NBA, CFB, tennis, and more." />
+  <title>Cole Barber · Sports & Data Analytics Portfolio</title>
+  <meta name="description" content="Projects and assignments from my Sports & Data Analytics work—MLB, NFL, CFB, tennis, and business analytics." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -28,18 +28,14 @@
               900: "#0c4a6e"
             }
           },
-          boxShadow: {
-            soft: "0 10px 30px -10px rgb(0 0 0 / 0.2)"
-          }
+          boxShadow: { soft: "0 10px 30px -10px rgb(0 0 0 / 0.2)" }
         }
       },
       darkMode: 'class'
     }
   </script>
   <style>
-    /* Smooth scrolling for anchor links */
     html { scroll-behavior: smooth; }
-    /* Outline focus for keyboard users */
     :focus-visible { outline: 3px solid #38bdf8; outline-offset: 2px; border-radius: 6px; }
   </style>
 </head>
@@ -60,6 +56,9 @@
           <a class="hover:text-brand-600 dark:hover:text-brand-400" href="#resume">Resume</a>
         </nav>
         <div class="flex items-center gap-2">
+          <a href="Cole_Barber_Resume.pdf" class="hidden md:inline-flex px-3 py-2 rounded-xl bg-brand-600 text-white hover:bg-brand-700 shadow-soft text-sm" download>
+            Download Resume
+          </a>
           <button id="themeToggle" aria-label="Toggle dark mode" class="p-2 rounded-xl border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-900">
             <svg id="iconMoon" xmlns="http://www.w3.org/2000/svg" class="size-5 hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M21.64 13A9 9 0 1111 2.36a7 7 0 0010.63 10.63z"/></svg>
             <svg id="iconSun" xmlns="http://www.w3.org/2000/svg" class="size-5 hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M12 18a6 6 0 100-12 6 6 0 000 12zm0 4a1 1 0 011 1v1h-2v-1a1 1 0 011-1zM4.22 19.78a1 1 0 01.7-.29h.01a1 1 0 01.7 1.71l-.71.71-1.41-1.41.71-.71zM1 13h1a1 1 0 010 2H1v-2zm21 0h1v2h-1a1 1 0 010-2zM4.22 4.22l.71.71A1 1 0 013.52 6.64l-.71-.71 1.41-1.41zM12 1a1 1 0 011-1h0a1 1 0 011 1v1h-2V1zm9.49 3.52l1.41 1.41-.71.71a1 1 0 01-1.41-1.41l.71-.71zM18 22.59l-.71-.71a1 1 0 011.41-1.41l.71.71-1.41 1.41z"/></svg>
@@ -77,36 +76,41 @@
         <a class="hover:text-brand-600 dark:hover:text-brand-400" href="#skills">Skills</a>
         <a class="hover:text-brand-600 dark:hover:text-brand-400" href="#contact">Contact</a>
         <a class="hover:text-brand-600 dark:hover:text-brand-400" href="#resume">Resume</a>
+        <a class="hover:text-brand-600 dark:hover:text-brand-400" href="Cole_Barber_Resume.pdf" download>Download Resume</a>
       </div>
     </div>
   </header>
 
   <!-- Hero -->
-<section id="home" class="relative overflow-hidden">
-  <div class="max-w-6xl mx-auto px-4 py-20 md:py-24">
-    <div class="grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
-          Sports Analytics Portfolio
-        </h1>
-        <p class="mt-5 text-lg text-slate-600 dark:text-slate-300">
-          Hi, my name is <span class="font-semibold">Cole Barber</span> — a data analyst focused on MLB, NFL, CFB, and tennis. I build predictive models, interactive apps, and data stories.
-        </p>
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#projects" class="px-4 py-2 rounded-xl bg-brand-600 text-white hover:bg-brand-700 shadow-soft">View Projects</a>
-          <a href="#contact" class="px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-900">Contact</a>
+  <section id="home" class="relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 py-20 md:py-24">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
+            Sports & Data Analytics Portfolio
+          </h1>
+          <p class="mt-5 text-lg text-slate-700 dark:text-slate-300">
+            Hi, I’m <span class="font-semibold">Cole Barber</span> — a data & sports analytics specialist focused on MLB, NFL, CFB, and tennis. I build
+            <span class="font-semibold">predictive models</span>, <span class="font-semibold">interactive dashboards</span>, and <span class="font-semibold">statistical analyses</span>
+            that turn complex datasets into actionable insights.
+          </p>
+          <ul class="mt-4 text-slate-700 dark:text-slate-300 text-sm space-y-1">
+            <li>• Tools: R (tidyverse, ggplot2, Shiny), Python (pandas, NumPy, matplotlib), SQL, Excel</li>
+            <li>• Sports Data: Statcast, FanGraphs, Retrosheet, SportsDataverse/CFBD</li>
+            <li>• Focus: player evaluation, ticketing & pricing, win probability, team valuation</li>
+          </ul>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#projects" class="px-4 py-2 rounded-xl bg-brand-600 text-white hover:bg-brand-700 shadow-soft">View Projects</a>
+            <a href="#contact" class="px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-900">Contact</a>
+            <a href="Cole_Barber_Resume.pdf" class="px-4 py-2 rounded-xl bg-white dark:bg-slate-900 border border-brand-600 text-brand-700 dark:text-brand-300 hover:bg-brand-50 dark:hover:bg-slate-900/70" download>Download Resume (PDF)</a>
+          </div>
+        </div>
+        <div class="relative flex justify-center">
+          <img src="images/Screenshot 2022-03-01 at 10.38.44 PM.JPEG" alt="Cole Barber" class="w-64 h-64 rounded-full object-cover object-top mx-auto shadow-soft">
         </div>
       </div>
-      <div class="relative flex justify-center">
-        <img
-          src="images/Screenshot 2022-03-01 at 10.38.44 PM.JPEG"
-          alt="Cole Barber"
-          class="w-64 h-64 rounded-full object-cover object-top mx-auto shadow-soft"
-        >
-      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Projects -->
   <section id="projects" class="py-16 md:py-20 border-t border-slate-200/60 dark:border-slate-800/60">
@@ -114,14 +118,14 @@
       <div class="flex items-end justify-between gap-4 flex-wrap">
         <div>
           <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Projects</h2>
-          <p class="mt-2 text-slate-600 dark:text-slate-400">A selection of coursework, models, and apps.</p>
+          <p class="mt-2 text-slate-600 dark:text-slate-400">A selection of applied analytics, models, and interactive apps.</p>
         </div>
         <div class="flex items-center gap-2 text-sm">
           <label for="filter" class="sr-only">Filter</label>
           <select id="filter" class="rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent px-3 py-2">
             <option value="all">All</option>
             <option>MLB</option>
-            <option>NBA</option>
+            <option>NFL</option>
             <option>CFB</option>
             <option>Tennis</option>
             <option>R</option>
@@ -163,12 +167,12 @@
       <div class="md:col-span-2">
         <h2 class="text-2xl md:text-3xl font-bold tracking-tight">About</h2>
         <p class="mt-4 text-slate-700 dark:text-slate-300 leading-relaxed">
-          I graduated from the University of South Carolina with a Bachelors in Sport and Entertainment Management in 2024 and received a Graduate Certificate in Sports Analytics from Northwestern University in August of 2025. My projects span predictive modeling (runs per game, win probability), optimization (roster construction), and interactive visualization (R Shiny).
+          I earned a B.S. in Sport & Entertainment Management (Statistics emphasis) from the University of South Carolina (2024) and a Graduate Certificate in Sports Analytics from Northwestern University (2025). My work spans predictive modeling (run totals, win probability), optimization (roster construction), and interactive visualization (R Shiny), with a focus on baseball and applied decision support.
         </p>
         <ul class="mt-4 list-disc pl-6 text-slate-700 dark:text-slate-300 space-y-2">
-          <li>Tools: R, Python, SQL, Excel, Shiny, ggplot2, scikit‑learn, xgboost, LightGBM</li>
-          <li>Data sources: Statcast, FanGraphs, Retrosheet, KenPom, CFBD API</li>
-          <li>Focus: MLB modeling, player valuation, ticketing & promotions strategy</li>
+          <li>Tools: R, Python, SQL, Excel, Shiny, ggplot2, scikit‑learn, XGBoost, LightGBM</li>
+          <li>Data sources: Statcast, FanGraphs, Retrosheet, CFBD API</li>
+          <li>Focus areas: MLB player evaluation, ticketing & promotions strategy, pricing, and team valuation</li>
         </ul>
       </div>
       <aside class="md:col-span-1 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50">
@@ -177,64 +181,57 @@
           <li><a class="hover:underline" href="#projects">Featured Projects</a></li>
           <li><a class="hover:underline" href="#resume">Resume</a></li>
           <li><a class="hover:underline" href="#contact">Contact</a></li>
-          <li><a class="hover:underline" href="mailto:colebarber@example.com">Email me</a></li>
+          <li><a class="hover:underline" href="mailto:colebarber21@yahoo.com">Email me</a></li>
         </ul>
       </aside>
     </div>
   </section>
 
-<!-- Skills -->
-<section id="skills" class="py-16 md:py-20 border-t border-slate-200/60 dark:border-slate-800/60">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Skills</h2>
-
-    <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-      <!-- Card 1 -->
-      <div class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
-        <h4 class="font-semibold">Data Science & Analytics</h4>
-        <ul class="mt-2 space-y-1 text-sm text-slate-600 dark:text-slate-400 list-disc pl-5">
-          <li>Regression, classification, clustering</li>
-          <li>Time-series & forecasting</li>
-          <li>Optimization</li>
-          <li>Stat inference & A/B testing</li>
-        </ul>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
-        <h4 class="font-semibold">Modeling Libraries</h4>
-        <ul class="mt-2 space-y-1 text-sm text-slate-600 dark:text-slate-400 list-disc pl-5">
-          <li>R: tidyverse, ggplot2, caret</li>
-          <li>Python: pandas, scikit-learn</li>
-          <li>Boosted trees: XGBoost, LightGBM</li>
-          <li>Shiny apps & Plotly visuals</li>
-        </ul>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
-        <h4 class="font-semibold">Data Engineering & Ops</h4>
-        <ul class="mt-2 space-y-1 text-sm text-slate-600 dark:text-slate-400 list-disc pl-5">
-          <li>SQL (joins, performance basics)</li>
-          <li>APIs, scraping, data cleaning</li>
-          <li>Reproducible pipelines (Rmd/Jupyter)</li>
-          <li>Git/GitHub, GitHub Pages deploys</li>
-        </ul>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
-        <h4 class="font-semibold">Business & Communication</h4>
-        <ul class="mt-2 space-y-1 text-sm text-slate-600 dark:text-slate-400 list-disc pl-5">
-          <li>Stakeholder-first problem framing</li>
-          <li>Data storytelling for non-technical teams</li>
-          <li>Dashboards & reporting</li>
-          <li>Domain: sports, pricing & promotions</li>
-        </ul>
+  <!-- Skills -->
+  <section id="skills" class="py-16 md:py-20 border-t border-slate-200/60 dark:border-slate-800/60">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Skills</h2>
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
+          <h4 class="font-semibold">Data Science & Analytics</h4>
+          <ul class="mt-2 space-y-1 text-sm text-slate-600 dark:text-slate-400 list-disc pl-5">
+            <li>Regression, classification, clustering</li>
+            <li>Time-series & forecasting</li>
+            <li>Optimization</li>
+            <li>Stat inference & A/B testing</li>
+          </ul>
+        </div>
+        <div class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
+          <h4 class="font-semibold">Modeling Libraries</h4>
+          <ul class="mt-2 space-y-1 text-sm text-slate-600 dark:text-slate-400 list-disc pl-5">
+            <li>R: tidyverse, ggplot2, Shiny, caret</li>
+            <li>Python: pandas, scikit‑learn</li>
+            <li>Boosted trees: XGBoost, LightGBM</li>
+            <li>Dashboards: Shiny & Plotly</li>
+          </ul>
+        </div>
+        <div class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
+          <h4 class="font-semibold">Data Engineering & Ops</h4>
+          <ul class="mt-2 space-y-1 text-sm text-slate-600 dark:text-slate-400 list-disc pl-5">
+            <li>SQL (joins & aggregations)</li>
+            <li>APIs, scraping, data cleaning</li>
+            <li>Reproducible pipelines (Rmd/Jupyter)</li>
+            <li>Git/GitHub, GitHub Pages</li>
+          </ul>
+        </div>
+        <div class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
+          <h4 class="font-semibold">Business & Communication</h4>
+          <ul class="mt-2 space-y-1 text-sm text-slate-600 dark:text-slate-400 list-disc pl-5">
+            <li>Stakeholder-first framing</li>
+            <li>Data storytelling</li>
+            <li>Dashboards & reporting</li>
+            <li>Domains: sports, pricing & promotions</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
   <!-- Resume -->
   <section id="resume" class="py-16 md:py-20 border-t border-slate-200/60 dark:border-slate-800/60">
     <div class="max-w-6xl mx-auto px-4">
@@ -243,68 +240,52 @@
           <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Resume</h2>
           <p class="mt-2 text-slate-600 dark:text-slate-400">Preview or download a copy of my resume.</p>
         </div>
-          <a href="resume.pdf" id="resumeLink"
-          class="px-4 py-2 rounded-xl bg-brand-600 text-white hover:bg-brand-700 shadow-soft">
-          Download PDF </a>
+        <div class="flex gap-2">
+          <a href="Cole_Barber_Resume.pdf" id="resumeLinkPdf" class="px-4 py-2 rounded-xl bg-brand-600 text-white hover:bg-brand-700 shadow-soft" download>Download PDF</a>
+          <a href="Cole_Barber_Resume.docx" id="resumeLinkDocx" class="px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-900" download>Download DOCX</a>
+        </div>
       </div>
+      <iframe title="Resume preview" class="mt-6 w-full aspect-[8.5/11] rounded-xl border border-slate-200 dark:border-slate-800 bg-white" src="Cole_Barber_Resume.pdf"></iframe>
     </div>
   </section>
 
-<!-- Contact -->
-<section id="contact" class="py-16 md:py-20 border-t border-slate-200/60 dark:border-slate-800/60">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Contact</h2>
-    <div class="mt-6 grid md:grid-cols-2 gap-6">
-
-      <!-- Contact Form -->
-      <form action="https://formspree.io/f/xqaypjlw" 
-      class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
-        <div class="grid md:grid-cols-2 gap-4">
-          <label class="text-sm">Name
-            <input name="name" required class="mt-1 w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent px-3 py-2" />
+  <!-- Contact -->
+  <section id="contact" class="py-16 md:py-20 border-t border-slate-200/60 dark:border-slate-800/60">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Contact</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <form action="https://formspree.io/f/xqaypjlw" class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
+          <div class="grid md:grid-cols-2 gap-4">
+            <label class="text-sm">Name
+              <input name="name" required class="mt-1 w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent px-3 py-2" />
+            </label>
+            <label class="text-sm">Email
+              <input type="email" name="email" required class="mt-1 w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent px-3 py-2" />
+            </label>
+          </div>
+          <label class="text-sm block mt-4">Message
+            <textarea name="message" required rows="4" class="mt-1 w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent px-3 py-2"></textarea>
           </label>
-          <label class="text-sm">Email
-            <input type="email" name="email" required class="mt-1 w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent px-3 py-2" />
-          </label>
+          <button class="mt-4 px-4 py-2 rounded-xl bg-brand-600 text-white hover:bg-brand-700 shadow-soft">Send</button>
+        </form>
+        <div class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50">
+          <h3 class="font-semibold">Elsewhere</h3>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li><a class="hover:underline" href="mailto:colebarber21@yahoo.com">📧 colebarber21@yahoo.com</a></li>
+            <li><a class="hover:underline" href="https://www.linkedin.com/in/cole-barber-7291b71b6/" target="_blank" rel="noopener">💼 LinkedIn</a></li>
+            <li><a class="hover:underline" href="https://github.com/ColeB22" target="_blank" rel="noopener">💻 GitHub</a></li>
+          </ul>
         </div>
-        <label class="text-sm block mt-4">Message
-          <textarea name="message" required rows="4" class="mt-1 w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent px-3 py-2"></textarea>
-        </label>
-        <button class="mt-4 px-4 py-2 rounded-xl bg-brand-600 text-white hover:bg-brand-700 shadow-soft">Send</button>
-      </form>
-
-      <!-- Sidebar with your info -->
-      <div class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50">
-        <h3 class="font-semibold">Elsewhere</h3>
-        <ul class="mt-3 space-y-2 text-sm">
-          <li>
-            <a class="hover:underline" href="mailto:colebarber21@yahoo.com">
-              📧 colebarber21@yahoo.com
-            </a>
-          </li>
-          <li>
-            <a class="hover:underline" href="https://www.linkedin.com/in/cole-barber-7291b71b6/" target="_blank" rel="noopener">
-              💼 LinkedIn
-            </a>
-          </li>
-          <li>
-            <a class="hover:underline" href="https://github.com/ColeB22" target="_blank" rel="noopener">
-              💻 GitHub
-            </a>
-          </li>
-        </ul>
       </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
   <footer class="py-10 text-center text-sm text-slate-500">
     <div class="max-w-6xl mx-auto px-4">© <span id="year"></span> Cole Barber. Built with HTML + Tailwind. Deployed on GitHub Pages.</div>
   </footer>
 
   <script>
-    // --- THEME TOGGLE ---
+    // THEME TOGGLE
     const themeToggle = document.getElementById('themeToggle');
     const iconSun = document.getElementById('iconSun');
     const iconMoon = document.getElementById('iconMoon');
@@ -315,74 +296,70 @@
       iconMoon.classList.toggle('hidden', !dark);
       localStorage.setItem('theme', dark ? 'dark' : 'light');
     };
-    applyTheme(localStorage.getItem('theme')
-      ? localStorage.getItem('theme') === 'dark'
-      : prefersDark.matches);
-    themeToggle.addEventListener('click', () => {
-      applyTheme(!document.documentElement.classList.contains('dark'));
-    });
+    applyTheme(localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : prefersDark.matches);
+    themeToggle.addEventListener('click', () => applyTheme(!document.documentElement.classList.contains('dark')));
 
-    // --- PROJECTS DATA ---
-   const projects = [
-  {
-    title: "MLB Player Comparison App",
-    desc: "Interactive dashboard with Player Overview, Career Progression, Similar Player Finder; built in R Shiny using Statcast/FanGraphs data.",
-    badge: "App",
-    tags: ["R", "Shiny", "Fangraphs", "Statcast"],
-    link: "https://coleb22.shinyapps.io/mlb_player_data_analysis_app/",                     // TODO: shinyapps.io demo OR walkthrough video
-    image: "images/shiny-mlb-comparison-1.png" // TODO: upload screenshot with this exact name
-  },
-  {
-    title: "White Sox Relocation Analysis",
-    desc: "Data-driven analysis of a potential White Sox relocation to Charlotte: attendance modeling, dynamic pricing, roster valuation, and relocation case studies.",
-    badge: "MLB",
-    tags: ["R", "EDA", "Econometrics", "R Markdown"],
-    link: "White-Sox-Relocation.pdf",     // Export your DOCX to this exact PDF name at repo root  [oai_citation:0‡How-to-Guide.docx]
-    image: "images/white-sox-relocation.png"   // TODO: upload a cover image with this name
-  },
-  // Smaller Showcase Projects
-  {
-    title: "MLB Batted-ball and Strikezone Heatmap Analysis",
-    desc: "Strike zone heatmaps and exit velocity patterns for Seiya Suzuki's 2023 and 2024 seasons",
-    badge: "MLB",
-    tags: ["R", "ggplot2", "EDA"],
-    link: "Seiya-Suzuki-Plate-Analysis - PDF version.pdf",
-    image: "images/Suzuki-Project-Cover.png"
-  },
-  {
-    title: "Atlanta Hawks' Team Construction & Four Factors",
-    desc: "Atlanta Hawks' player archetype clustering and lineup analysis for efficiency.",
-    badge: "NBA",
-    tags: ["R", "k-means clustering", "EDA"],
-    link: "NBA Player Classification Assignment - PDF.pdf",
-    image: "images/NBA Categorization Cover.png"
-  },
-  {
-    title: "NFL Win Probability Model (in progress)",
-    desc: "Building a logistic probability model using NFL play-by-play data (2013 - 2024) with WPA analysis.",
-    badge: "NFL",
-    tags: ["R", "Modeling"],
-    link: "#",
-    image: ""
-  },
-  {
-    title: "MLB Run Predictions Model (in progress)",
-    desc: "Developing a daily prediction system for MLB game run totals.",
-    badge: "MLB",
-    tags: ["Python", "EDA", "Modeling"],
-    link: "#",
-    image: ""
-  },
-  {
-    title: "NCAA Football Outcomes Model (in progress)",
-    desc: "Building a model that outputs projected points for each team in FBS NCAAF matchups.",
-    badge: "NCAAF",
-    tags: ["R", "Modeling", "Web-Scraping"],
-    link: "#",
-    image: ""
-  }];
+    // PROJECTS DATA
+    const projects = [
+      {
+        title: "MLB Player Comparison App",
+        desc: "Interactive R Shiny dashboard (Player Overview, Career Progression, Similar Player Finder) using Statcast/FanGraphs data.",
+        badge: "App",
+        tags: ["R", "Shiny", "FanGraphs", "Statcast"],
+        link: "https://coleb22.shinyapps.io/mlb_player_data_analysis_app/",
+        image: "images/shiny-mlb-comparison-1.png"
+      },
+      {
+        title: "White Sox Relocation Analysis",
+        desc: "Data-driven evaluation of a potential move to Charlotte: attendance modeling, dynamic pricing, roster valuation, and relocation comps.",
+        badge: "MLB",
+        tags: ["R", "EDA", "Econometrics", "R Markdown"],
+        link: "White-Sox-Relocation.pdf",
+        image: "images/white-sox-relocation.png"
+      },
+      {
+        title: "MLB Batted-ball & Strike-zone Heatmaps",
+        desc: "Strike-zone heatmaps and exit velocity patterns for Seiya Suzuki (2023–2024).",
+        badge: "MLB",
+        tags: ["R", "ggplot2", "EDA"],
+        link: "Seiya-Suzuki-Plate-Analysis - PDF version.pdf",
+        image: "images/Suzuki-Project-Cover.png"
+      },
+      {
+        title: "Atlanta Hawks Team Construction & Four Factors",
+        desc: "Player archetype clustering and lineup analysis for efficiency.",
+        badge: "NBA",
+        tags: ["R", "k-means", "EDA"],
+        link: "NBA Player Classification Assignment - PDF.pdf",
+        image: "images/NBA Categorization Cover.png"
+      },
+      {
+        title: "NFL Win Probability Model (in progress)",
+        desc: "Logistic model using play-by-play data (2013–2024) with WPA analysis and game swing events.",
+        badge: "NFL",
+        tags: ["R", "Modeling"],
+        link: "#",
+        image: ""
+      },
+      {
+        title: "MLB Run Predictions (in progress)",
+        desc: "Daily prediction system for MLB run totals; pipeline design and evaluation.",
+        badge: "MLB",
+        tags: ["Python", "EDA", "Modeling"],
+        link: "#",
+        image: ""
+      },
+      {
+        title: "NCAA Football Outcomes Model (in progress)",
+        desc: "Projected points for FBS matchups using schedule, pace, and efficiency inputs.",
+        badge: "CFB",
+        tags: ["R", "Modeling", "Web‑scraping"],
+        link: "#",
+        image: ""
+      }
+    ];
 
-    // --- RENDER PROJECTS ---
+    // RENDER PROJECTS
     const grid = document.getElementById('projectsGrid');
     const tmpl = document.getElementById('projectCard');
     const render = (items) => {
@@ -394,14 +371,10 @@
         node.querySelector('[data-desc]').textContent = p.desc;
         node.querySelector('[data-badge]').textContent = p.badge;
         node.querySelector('[data-link-primary]').href = p.link || '#';
-        const codeLink = node.querySelector('[data-link-secondary]');
-        if (codeLink) codeLink.href = p.code || '#';
         const media = node.querySelector('.aspect-video');
-        if (p.image) {
-          media.innerHTML = `<img src="${p.image}" alt="${p.title}" class="w-full h-full object-cover">`;
-        }
+        if (p.image) media.innerHTML = `<img src="${p.image}" alt="${p.title}" class="w-full h-full object-cover">`;
         const tagWrap = node.querySelector('[data-tags]');
-        p.tags.forEach(t => {
+        (p.tags || []).forEach(t => {
           const el = document.createElement('span');
           el.className = 'text-xs px-2 py-1 rounded-full border border-slate-200 dark:border-slate-700';
           el.textContent = t;
@@ -412,7 +385,7 @@
     };
     render(projects);
 
-    // --- FILTER + SEARCH ---
+    // FILTER + SEARCH
     const filterSel = document.getElementById('filter');
     const searchInp = document.getElementById('search');
     const applyFilter = () => {
@@ -429,10 +402,10 @@
     filterSel.addEventListener('change', applyFilter);
     searchInp.addEventListener('input', applyFilter);
 
-    // --- YEAR + RESUME ---
+    // YEAR + RESUME
     document.getElementById('year').textContent = new Date().getFullYear();
-    // If a resume.pdf exists at repo root, this will 404 until you add it
-    document.getElementById('resumeLink').href = 'resume.pdf';
+    document.getElementById('resumeLinkPdf').href = 'Cole_Barber_Resume.pdf';
+    document.getElementById('resumeLinkDocx').href = 'Cole_Barber_Resume.docx';
   </script>
 </body>
 </html>
