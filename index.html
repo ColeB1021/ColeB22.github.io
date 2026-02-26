@@ -106,7 +106,7 @@
           </div>
         </div>
         <div class="relative flex justify-center">
-          <img src="images/Screenshot 2022-03-01 at 10.38.44 PM.JPEG" alt="Cole Barber" class="w-64 h-64 rounded-full object-cover object-top mx-auto shadow-soft">
+          <img src="images/Screenshot 2022-03-01 at 10.38.44 PM.JPEG" alt="Cole Barber" class="w-64 h-64 rounded-full object-cover object-top mx-auto shadow-soft border-4 border-white dark:border-slate-900">
         </div>
       </div>
     </div>
@@ -136,10 +136,10 @@
         </div>
       </div>
 
-      <div id="projectsGrid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
-
+      <div id="projectsGrid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-7"></div>
+      
       <template id="projectCard">
-        <article class="group rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-soft overflow-hidden flex flex-col">
+        <article class="group rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-soft overflow-hidden flex flex-col transition transform group-hover:-translate-y-1 group-hover:shadow-lg">
           <a class="block" data-href>
             <div class="aspect-video bg-slate-100 dark:bg-slate-800 flex items-center justify-center">
               <span class="text-xs text-slate-500">Preview</span>
@@ -302,10 +302,10 @@
     // PROJECTS DATA
     const projects = [
       {
-        title: "NHL Power Rankings & Betting Model",
-        desc: "Daily NHL power rankings and betting model built in R. Analyzes team performance, predicts game outcomes, and identifies value bets using statistical modeling.",
+        title: "NHL Team Strength & Market Evaluation Model",
+        desc: "Daily NHL power rankings and betting model built in R that track team strength, compare model-implied probabilities to market prices, and surface where sentiment differs from underlying performance.",
         badge: "NHL",
-        tags: ["R", "Predictive Modeling", "Sports Betting", "Data Analysis"],
+        tags: ["R", "Predictive Modeling", "Market Evaluation", "Data Analysis"],
         link: "https://github.com/ColeB1021/nhl_betting_model",
         image: "images/nhl-model.png"
       },
@@ -315,7 +315,7 @@
         badge: "DFS",
         tags: ["R", "Shiny", "Simulation", "Risk & Trading"],
         link: "https://github.com/ColeB1021/dfs-abuse-detection-sandbox",
-        image: "images/ncaa-model.png"
+        image: "images/dfs-risk-lab.png"
       },
       {
         title: "MLB Player Comparison App",
